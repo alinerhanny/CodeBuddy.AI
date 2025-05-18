@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeBuddy.AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Highlight.js (estilo do código) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+</head>
+<body>
+  <header id="top-header">
+    <button id="open-sidebar" aria-label="Abrir sidebar">
+      <img src="img/left_panel_open_36dp_F0E9D6_FILL0_wght400_GRAD0_opsz40.svg" alt="" width="36px" height="24px">
+    </button>
+
+    <button class="new-chat" aria-label="Novo chat">Novo Chat</button>
+  </header>
+
+<aside id="sidebar">
+  <button id="close-sidebar">✖</button>
+  <button class="new-chat sidebarBtn">Novo Chat</button>
+  <div class="chat-history">
+  </div>
+</aside>
+
+  <main>
+    <div class="intro">
+      <h1>Oi, eu sou o CodeBuddy! </h1>
+      <p>Estou aqui para te ajudar a aprender programação. Sobre o que você quer saber hoje?</p>
+    </div>
+    
+    <div id="chat-container"></div>
+
+      <div id="loading-indicator" style="display: none;">
+        <i class="fa-solid fa-spinner fa-spin fa-lg"></i> <span style="margin-left: 8px;">Processando...</span>
+    </div>
+
+    <div class="input">
+      <textarea placeholder="Pergunte alguma coisa" id="chat-input"></textarea>
+      <div class="buttons">
+        <button id="submit">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </main>
+
+    <footer id="main-footer">
+      <p>© 2025 CodeBuddy.AI - Todos os direitos reservados.</p>
+    </footer>
+
+  <!-- Marcação Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  
+  <!-- Highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
