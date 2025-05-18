@@ -83,8 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function sendMessageToServer(pergunta) {
         try {
-            const response = await fetch('https://codebuddy-api-ke1r.onrender.com/api/perguntar
-', {
+            const response = await fetch('https://codebuddy-api-ke1r.onrender.com/api/perguntar', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ pergunta }),
